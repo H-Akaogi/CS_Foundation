@@ -6,19 +6,18 @@ static class Program
 {
     static void Main(string[] args)
     {
-        bool a = true, b = false;
-        Console.WriteLine($"a && a = {a && a}");
-        Console.WriteLine($"a && b = {a && b}");
-        Console.WriteLine($"b && a = {b && a}");
-        Console.WriteLine($"b && b = {b && b}");
-        Console.WriteLine($"a || a = {a || a}");
-        Console.WriteLine($"a || b = {a || b}");
-        Console.WriteLine($"b || a = {b || a}");
-        Console.WriteLine($"b || b = {b || b}");
-        int x = 1;
-        Console.WriteLine($"b && x++ > 1 = {b && x++ > 1}");
-        Console.WriteLine($"x = {x}");
-        Console.WriteLine($"b & x++ > 1 = {b & x++ > 1}");
-        Console.WriteLine($"x = {x}");        
+        int[] num = new int[3];
+        int[] Num = {1, 2, 3};
+        Console.Write($"数値{Num[0]}を入力してください -> ");
+        num[0] = int.Parse(Console.ReadLine());
+        Console.Write($"数値{Num[1]}を入力してください -> ");
+        num[1] = int.Parse(Console.ReadLine());
+        Console.Write($"数値{Num[2]}を入力してください -> ");
+        num[2] = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("入力結果");
+        Console.WriteLine($"数値{Num[0]}:{num[0]}");
+        Console.WriteLine($"数値{Num[1]}:{num[1]}");
+        Console.WriteLine($"数値{Num[2]}:{num[2]}");
     }
 }
