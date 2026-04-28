@@ -16,6 +16,7 @@ static class Program
         item.pprice = int.Parse(Console.ReadLine());
         item.ChangePrice();
         item.Print();
-        Console.WriteLine($"税込み金額 = {item.pprice + (item.pprice * item.salesTaxRate)}");
+        int answer = item.CalculateTaxAmount();
+        Console.WriteLine(answer);
     }
 }

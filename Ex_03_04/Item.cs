@@ -20,5 +20,9 @@ public class Item //ファイル名と揃える
         Console.WriteLine($"商品名 = {itemName}");
         Console.WriteLine($"単価 = {price}");
     }
+    public int CalculateTaxAmount()
+    {
+        return (int)(price + (price * salesTaxRate));
+    }
 }
 
