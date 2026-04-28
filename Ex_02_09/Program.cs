@@ -6,7 +6,7 @@ static class Program
     {
         string[] inputStation = { "品川", "大崎", "五反田", "目黒", "恵比寿", "渋谷", "原宿", "代々木", "新宿" };
 
-        for (int i = 0; i < inputStation.Length; i++)
+        for (int i = 0; i < inputStation.Length; i++) //inputStationの範囲で処理
         {
             Console.WriteLine($"{inputStation[i]}");
         }
