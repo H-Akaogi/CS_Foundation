@@ -10,7 +10,5 @@ static class Program
         {
             Console.WriteLine($"{inputStation[i]}");
         }
-
-
     }
 }
