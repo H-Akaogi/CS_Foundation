@@ -14,5 +14,16 @@ static class Program
 
         int answer = Mul3(); //返した値をanswerに
         Console.WriteLine(answer);
+
+        /*
+        Console.Write("値を入力してください -> ");
+        int inputNum = int.Parse(Console.ReadLine());
+        Console.WriteLine(Mul3(inputNum));
+
+        int Mul3(int num)
+        {
+        return num * 3;
+        }
+        */
     }
 }
