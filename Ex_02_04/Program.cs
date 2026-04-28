@@ -4,16 +4,19 @@ static class Program
 {
     static void Main(string[] args)
     {
-        System.Console.Write("数値1を入力してください -> ");
-        int a = int.Parse(System.Console.ReadLine());
-        System.Console.Write("数値2を入力してください -> ");
-        int b = int.Parse(System.Console.ReadLine());
-        System.Console.Write("数値3を入力してください -> ");
-        int c = int.Parse(System.Console.ReadLine());
+        int[] num = new int[3];
+        int[] Num = {1, 2, 3};
+        Console.Write($"数値{Num[0]}を入力してください -> ");
+        num[0] = int.Parse(Console.ReadLine());
+        Console.Write($"数値{Num[1]}を入力してください -> ");
+        num[1] = int.Parse(Console.ReadLine());
+        Console.Write($"数値{Num[2]}を入力してください -> ");
+        num[2] = int.Parse(Console.ReadLine());
 
-        System.Console.WriteLine("入力結果");
-        System.Console.WriteLine($"数値1:{a}");
-        System.Console.WriteLine($"数値2:{b}");
-        System.Console.WriteLine($"数値3:{c}");
+        Console.WriteLine("入力結果");
+        Console.WriteLine($"数値{Num[0]}:{num[0]}");
+        Console.WriteLine($"数値{Num[1]}:{num[1]}");
+        Console.WriteLine($"数値{Num[2]}:{num[2]}");
+
     }
 }
