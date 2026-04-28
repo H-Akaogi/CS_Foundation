@@ -7,14 +7,16 @@ static class Program
     static void Main(string[] args)
     {
         // インスタンスの生成
-        Item item = new Item();
+        Item item = new Item(); //クラス（頭文字は大文字） 変数名 = new クラス()//
+
         // フィールドに値を設定する
         Console.Write("商品番号を入力してください -> ");
-        item.itemNo = int.Parse(Console.ReadLine());
+        item.itemNo = int.Parse(Console.ReadLine()); // 変数名.フィールド名
         Console.Write("商品名を入力してください -> ");
         item.itemName = Console.ReadLine();
         Console.Write("単価を入力してください -> ");
         item.price = int.Parse(Console.ReadLine());
+
         // フィールドの値を取得する
         Console.WriteLine("結果");
         Console.WriteLine($"商品番号 = {item.itemNo}");
