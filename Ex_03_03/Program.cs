@@ -14,8 +14,7 @@ class Program
         item.price = int.Parse(Console.ReadLine());
         Console.Write("新しい単価を入力してください -> ");
         item.pprice = int.Parse(Console.ReadLine());
-
-        item.Print();
         item.ChangePrice();
+        item.Print();
     }
 }
