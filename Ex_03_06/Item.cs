@@ -17,6 +17,7 @@ public class Item //ファイル名と揃える。クラスの中身は{}でま�
     {
     }
     public Item(int pitemNo, string pitemName, int pprice)
+    //オーバーコンストラクタの確認のため書いているがなくてもOK
     {
         this.itemNo = pitemNo;
         this.itemName = pitemName;

@@ -4,10 +4,10 @@ static class Program
 {
     static void Main(string[] args)
     {
-        Item item = new Item();
+        Item item = new Item(); //インスタンスの生成
 
         Console.Write("商品番号を入力してください -> ");
-        item.itemNo = int.Parse(Console.ReadLine());
+        item.itemNo = int.Parse(Console.ReadLine()); //ドットの前にインスタンスを付けて呼び出す
         Console.Write("商品名を入力してください -> ");
         item.itemName = Console.ReadLine();         //Console.Readは一文字のみ読み取る。
         Console.Write("単価を入力してください -> ");

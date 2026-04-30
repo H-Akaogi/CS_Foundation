@@ -8,7 +8,6 @@ public class Item //ファイル名と揃える。クラスの中身は{}でま�
     public int itemNo;      //商品番号(フィールド)
     public string itemName; //商品名(フィールド)
     public int price;       //単価(フィールド)
-
     /// <summary>
     /// コンストラクタ
     /// </summary>
@@ -16,13 +15,11 @@ public class Item //ファイル名と揃える。クラスの中身は{}でま�
     /// <param name="pitemName"></param>
     /// <param name="pprice"></param>
     public Item(int pitemNo, string pitemName, int pprice)
-    //引数でフィールドを初期化する。変数名(pitemNoなど）はmainと対応していなくてOK
     {
         this.itemNo = pitemNo;
         this.itemName = pitemName;
         this.price = pprice;
     }
-
     /// <summary>
     /// Printメソッド
     /// </summary>
@@ -34,4 +31,3 @@ public class Item //ファイル名と揃える。クラスの中身は{}でま�
         Console.WriteLine($"単価 = {this.price}");
     }
 }
-
