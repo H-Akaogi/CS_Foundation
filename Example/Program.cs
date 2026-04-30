@@ -6,10 +6,18 @@ static class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("値1を入力してください->");
-        string value1 = Console.readLine()!;
-        Console.Write("値2を入力してください->");
-        int value2 = int.Parse(Console.readLine()!);
-    }
+        Warrior warrior = new("ユータ", 15);//引数ありのコンストラクタ
+        Console.WriteLine(warrior.name);
+        Console.WriteLine(warrior.hp);
 
+        Warrior warrior2 = new();
+        warrior2.name = "ユースケ";
+        warrior2.hp = 8;
+        Console.WriteLine(warrior2.name + warrior2.hp);
+
+        Warrior warrior3 = new("あいう");
+        warrior3.hp = 1;
+        Console.WriteLine(warrior3.name);
+        Console.WriteLine(warrior3.hp);
+    }
 }
