@@ -1,4 +1,3 @@
-namespace Example;
 /// <summary>
 /// 人物を表すクラス
 /// </summary>
