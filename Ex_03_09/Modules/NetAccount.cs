@@ -14,7 +14,8 @@ namespace Ex_03_09
         /// <summary>
         /// Pointを追加した親クラス（Account）インスタンス
         /// </summary>
-        public NetAccount(string AccountNo, string AccountName, int Balance, int Point) : base(AccountNo, AccountName, Balance)
+        public NetAccount(string AccountNo, string AccountName, int Balance, int Point)
+        : base(AccountNo, AccountName, Balance)
         {
             this.Point = Point;
         }
