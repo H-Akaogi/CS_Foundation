@@ -21,8 +21,8 @@ public class Circle
     {
         return radius * radius * PI;
     }
-    public static double AreaCalculation(int radius) //引数の半径の値の円の面積を計算する静的メソッド
+    public static double AreaCalculation(int rrrrrradius) //引数の半径の値の円の面積を計算する静的メソッド
     {
-        return radius * radius * PI;
+        return rrrrrradius * rrrrrradius * PI;
     }
 }
