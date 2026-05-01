@@ -1,14 +1,14 @@
+namespace Example;
 /// <summary>
 /// 人物を表すクラス
 /// </summary>
-public class Human
+public class Human : Character
 {
-    public string Name { get; set; }
     public int Hp { get; private set; }
 
-    public void Greet()
+    public override void Greet()
     {
-        Console.WriteLine("Hi!");
+        Console.WriteLine($"{Name}:やあ!");
     }
 
     public void Defence(int damage)

@@ -13,9 +13,9 @@ static class Program
         Console.Write("口座名義を入力してください - > ");
         netaccount.AccountName = Console.ReadLine();
         Console.Write("残高を入力してください - > ");
-        netaccount.Balance = int.Parse(Console.ReadLine());
+        netaccount.Balance = int.Parse(Console.ReadLine()!);
         Console.Write("ポイントを入力してください - > ");
-        netaccount.Point = int.Parse(Console.ReadLine());
+        netaccount.Point = int.Parse(Console.ReadLine()!);
         netaccount.Print();
     }
 }

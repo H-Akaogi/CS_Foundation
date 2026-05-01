@@ -1,15 +1,14 @@
 namespace Example;
 /// <summary>
-/// 戦士を表すクラス
+/// キャラクターの概念を継承した戦士の具象クラス
 /// </summary>
-public class Warrior : Human
+public class Warrior : Character
 {
-    public int Ap { get; set; } = 5;
-    public int Dp { get; set; }
-
-    public void Attack()
+    /// <summary>
+    /// 挨拶をするメソッド
+    /// </summary>
+    public override void Greet()
     {
-        Console.WriteLine("戦士は攻撃した！");
-        Console.WriteLine($"{Ap}のダメージを与えた。");
+        Console.WriteLine($"{Name}:Hello!");
     }
 }

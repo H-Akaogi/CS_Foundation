@@ -13,8 +13,8 @@ static class Program
         int Balance = int.Parse(Console.ReadLine()!);//int型の場合は?つけられない。!を付ける
         Console.Write("ポイントを入力してください - > ");
         int Point = int.Parse(Console.ReadLine()!);
-        ///コンストラクタ呼び出し（親クラスの変数に子クラスのインスタンスの参照を代入）
-        Account netaccount = new NetAccount(AccountNo!, AccountName!, Balance, Point);
+        ///コンストラクタ呼び出し（型名 変数 = new コンストラクタ(引数)）
+        var netaccount = new NetAccount(AccountNo!, AccountName!, Balance, Point);
         ///結果の表示
         Console.WriteLine("結果");
         netaccount.Print();
