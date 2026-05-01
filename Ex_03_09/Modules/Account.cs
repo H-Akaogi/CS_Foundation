@@ -19,7 +19,7 @@ namespace Ex_03_09
             this.Balance = Balance;
         }
         /// <summary>
-        /// Printメソッド
+        /// Printメソッド(仮想メソッド)
         /// </summary>
         public virtual void Print()
         {
@@ -30,7 +30,6 @@ namespace Ex_03_09
         /// <summary>
         /// objectクラスのToString()メソッドをオーバーライドし、プロパティの値の文字列を返却するメソッド
         /// </summary>
-        /// <returns></returns>
         public override string ToString()
         {
             return $"Account[AccountNo={AccountNo},AccountName={AccountName},Balance ={Balance}]";
