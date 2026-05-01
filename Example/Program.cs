@@ -4,8 +4,11 @@ static class Program
 {
     static void Main(string[] args)
     {
-        var human = new Human();
-        human.Name = "Aさん";
-        human.Greet();
+        Warrior warrior1 = new("ユータ");
+        Warrior warrior2 = new("ユーサク");
+        Warrior warrior3 = new("ユースケ");
+        warrior2.Greet();
+        Console.WriteLine($"{Warrior.cnt}人の勇者");
+        Warrior.ShowHeroNum();
     }
 }

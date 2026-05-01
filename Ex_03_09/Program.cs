@@ -14,10 +14,11 @@ static class Program
         Console.Write("ポイントを入力してください - > ");
         int Point = int.Parse(Console.ReadLine()!);
         ///コンストラクタ呼び出し（型名 変数 = new コンストラクタ(引数)）
+        /// インスタンス生成
         var netaccount = new NetAccount(AccountNo!, AccountName!, Balance, Point);
         ///結果の表示
         Console.WriteLine("結果");
-        netaccount.Print();
+        netaccount.Print();//インスタンスが挿入された変数名.メソッド()
         Console.WriteLine(netaccount.ToString());
     }
 }
