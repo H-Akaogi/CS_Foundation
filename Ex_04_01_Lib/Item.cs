@@ -1,4 +1,5 @@
 using System;
+namespace Ex_04_01_Lib;
 
 public class Item
 {

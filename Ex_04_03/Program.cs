@@ -15,7 +15,7 @@ static class Program
             string id = Console.ReadLine();//文字列で入力
             if (id == "End")//Endが入力されたら終了する(false)
             {
-                break;//終了
+                break;//現在のループを即座に終了し、外側の処理へ移る
             }
             Console.Write("社員名を入力してください -> ");
             string? name = Console.ReadLine();
